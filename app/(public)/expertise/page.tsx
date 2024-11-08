@@ -240,7 +240,7 @@ export default function Page() {
 
         <section className="text-center mb-6">
           <Link
-            href="https://github.com/lsproule/latex-resume/raw/main/build/main.pdf"
+            href="https://github.com/lsproule/latex-resume/raw/main/build/lucas.pdf"
             className="inline-flex bg-white text-black px-3 py-2 rounded-lg hover:bg-neutral-200 items-center"
             onClick={() => console.log("Download resume")}
           >

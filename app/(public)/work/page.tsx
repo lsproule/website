@@ -116,7 +116,7 @@ export default function Page() {
       </div>
       <div className="my-6 text-center">
         <Link
-          href="https://github.com/lsproule/latex-resume/raw/main/build/main.pdf"
+          href="https://github.com/lsproule/latex-resume/raw/main/build/lucas.pdf"
           className="bg-white hover:bg-neutral-200 text-black font-bold py-2 px-4 rounded inline-flex items-center"
         >
           <Download className="w-4 h-4 mr-2" />
