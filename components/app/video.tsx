@@ -32,7 +32,7 @@ export const Video = () => {
       onClick={playVideo}
     >
       <source src="/videos/video.mp4" type="video/mp4" /> 
-      <source src="/videos/video.ogv" type="video/ogv" /> 
+      <source src="/videos/video.ogv" type='video/ogg; codecs="theora, vorbis"' /> 
     </motion.video>
   );
 };
