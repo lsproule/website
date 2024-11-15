@@ -29,7 +29,7 @@ export function Navbar() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.3 }}
         className={`z-50 fixed top-0 left-0 right-0 w-full overflow-hidden transition-all duration-300 
-        ${scrolled || isMenuOpen ? "border-b border-gray-400 border-opacity-20 bg-white bg-opacity-5 backdrop-filter backdrop-blur-lg" : ""}`}
+        ${scrolled || isMenuOpen ? "bg-white bg-opacity-5 backdrop-filter backdrop-blur-lg" : ""}`}
       >
         <div className="px-4 lg:px-8 max-w-7xl mx-auto">
           <div className="flex items-center justify-between h-16">
