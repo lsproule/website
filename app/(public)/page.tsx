@@ -81,9 +81,9 @@ export default function Home() {
               </motion.div>
               <Services />
             </div>
-            <div className="rounded-sm relative h-[50vh] object-contain flex justify-center bg-transparent w-full bg-red-50 mt-14">
+            <div className="rounded-sm relative h-[50vh] object-contain  pointer-events-none flex justify-center bg-transparent w-full bg-red-50 mt-14">
               <Image
-                className="object-contain"
+                className="object-contain bg-[#2579A6] pointer-events-none rounded-full"
                 priority={true}
                 height={1000}
                 width={1000}
@@ -91,7 +91,7 @@ export default function Home() {
                 alt="Product image example"
               />
             </div>
-            <div className="flex justify-center items-center mt-12">
+            <div className="flex justify-center group items-center mt-12">
               <Link href="/work">
                 {" "}
                 <motion.div
@@ -99,11 +99,10 @@ export default function Home() {
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.4, type: "spring", stiffness: 100 }}
-                  whileHover={{ boxShadow: "0px 0px 8px rgb(255,255,255)" }}
-                  className="flex bg-gradient-to-t from-[#242443] to-[#110a45] hover:from-[#110a45] hover:to-[#242443] px-3 py-2 rounded-md text-lg md:text-xl font-semibold text-white"
+                  className="flex  bg-[#0e2c40] group-hover:text-black text-[#01d35e] hover:bg-[#01d35e] border-2 border-[#0e2c40] px-3 py-2 rounded-md text-lg md:text-xl font-semibold transition-all duration-300 "
                 >
                   See solutions
-                  <ArrowBigRightIcon className="ml-2 mt-0.5" />
+                  <ArrowBigRightIcon className="ml-2 mt-0.5 text-[#01d35e] group-hover:text-[#0e2c40] transition-all duration-300" />
                 </motion.div>
               </Link>
             </div>
