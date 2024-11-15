@@ -38,12 +38,17 @@ export default function Page() {
       duration: "Jan 2021 – Jan 2022",
       responsibilities: [
         "Managed Juniper network infrastructure using a custom Golang service for port configuration",
+        "Deployed EKS clusters to AWS with terraform",
+        "Setup Istio and Prometheus",
+        "Setup flagger and istio for canay deployments",
         "Set up on-premise Kubernetes clusters to reduce development costs",
         "Created CI/CD pipelines for deployment to on-premise Kubernetes clusters",
         "Developed a Golang service for managing Juniper network devices",
         "Improved the development environment by migrating to cloud and integrating Skaffold",
         "Participated in on-call rotations and contributed to disaster recovery planning",
         "Created and tested a chaos engineering plan to assess system resilience",
+        "Setup Monitoring and Alerts with prometheus and grafana", 
+        "Participated in on-call rotations and contributed to disaster recovery planning", 
       ],
     },
     {
@@ -80,7 +85,7 @@ export default function Page() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <Card key={index} className="dark shadow-lg">
+            <Card key={index} className="dark h-full shadow-lg">
               <CardHeader>
                 <motion.div
                   initial={{ opacity: 0, y: -40 }}

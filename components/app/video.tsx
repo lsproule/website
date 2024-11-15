@@ -17,6 +17,9 @@ export const Video = () => {
     setPlaying(false);
   };
 
+  const startPlaying = () => {
+   vidRef.current.playbackRate = 1.5;
+  }
   return (
     <motion.video
       ref={vidRef}
@@ -24,6 +27,7 @@ export const Video = () => {
       loop
       muted
       autoPlay
+      onCanPlay={() => startPlaying()} 
       style={{ filter: "grayscale(0%)" }}
       whileInView={{
         filter: ["grayscale(60%)", "grayscale(0%)"],

@@ -19,7 +19,7 @@ export default function Home() {
       <main className="justify-center items-center mx-auto">
         <HeroSection />
         <section className="border-t border-indigo-500 border-opacity-50 glow-border bg-gradient-to-t from-black via-[#05031455] to-[#1a1a2e]">
-          <div className="w-full sm:w-4/5 md:w-3/4 px-4 sm:px-6 md:px-8 mx-auto flex justify-center items-center mt-24 md:mt-32">
+          <div className="w-full pointer-events-none sm:w-4/5 md:w-3/4 px-4 sm:px-6 md:px-8 mx-auto flex justify-center items-center mt-24 md:mt-32">
             <Marquee
               speed={"slow"}
               items={[
@@ -48,9 +48,9 @@ export default function Home() {
             <Video />
           </div>
           <TextColor>
-            Transforming Development with Automation, Scalable Infrastructure,
-            and Reliable CI/CD Pipelines. Empowering teams to deliver faster and
-            innovate continuously in the cloud.
+            Accelerating team success with automation, scalable infrastructure,
+            and resilient CI/CD pipelines. I empower teams to deliver faster,
+            innovate continually, and thrive in the cloud.
           </TextColor>
 
           <div className="mt-32 sm:mt-40 md:mt-48 mx-auto h-auto w-full sm:w-4/5 md:w-3/4 px-4 sm:px-6 md:px-8">

@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { Stars } from "@/components/app";
+import { WordRotator } from "@/components/word-rotator";
 
 export const HeroSection = () => {
   return (
@@ -22,11 +23,18 @@ export const HeroSection = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.3 }}
-            className=" md:3/5  mx-auto"
+            className="mx-auto h-full"
           >
-            <h2 className="text-3xl px-5 md:text-6xl lg:text-7xl font-bold  md:px-4 pb-1 bg-gradient-to-br to-[#1EE4A2] from-[#5B78F9]  bg-clip-text text-transparent">
-              DevOps Engineer
-            </h2>
+            <WordRotator
+              className="text-3xl px-5  md:text-4xl lg:text-6xl font-bold  md:px-4"
+              words={[
+                "FullStack Engineer",
+                "Solutions Architect",
+                "Platform Engineer",
+                "Site Reliability Engineer",
+                "DevOps Engineer",
+              ]}
+            />
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 50 }}
